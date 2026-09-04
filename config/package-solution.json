@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "company-intranet-portal-client-side-solution",
+    "id": "073dafcc-78c2-4bea-9838-47413994c6b1",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "company-intranet-portal description"
+      },
+      "longDescription": {
+        "default": "company-intranet-portal description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "company-intranet-portal Feature",
+        "description": "The feature that activates elements of the company-intranet-portal solution.",
+        "id": "3612583a-9eb4-4e7a-8d62-8bf0701beb34",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/company-intranet-portal.sppkg"
+  }
+}

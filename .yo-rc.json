@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "useGulp": false,
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.23.1",
+    "sdksVersions": {},
+    "version": "1.23.2",
+    "libraryName": "company-intranet-portal",
+    "libraryId": "073dafcc-78c2-4bea-9838-47413994c6b1",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "company-intranet-portal",
+    "solutionShortDescription": "company-intranet-portal description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
