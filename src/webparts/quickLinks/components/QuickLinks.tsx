@@ -10,6 +10,7 @@ import "@pnp/sp/lists";
 import "@pnp/sp/items";
 import "@pnp/sp/fields";
 import "@pnp/sp/attachments";
+import groupIcon from '../assets/group.png';
 
 export interface IQuickLinksState {
 
@@ -17,13 +18,13 @@ export interface IQuickLinksState {
 
 export default class QuickLinks extends React.Component<IQuickLinksProps, IQuickLinksState> {
 
-  private sp:any;
+  private sp: any;
 
   constructor(props: IQuickLinksProps, state: IQuickLinksState) {
     super(props);
-    
+
     this.state = {
-      
+
     };
 
     this.sp = spfi().using(SPFx(this.props.context));
@@ -40,8 +41,43 @@ export default class QuickLinks extends React.Component<IQuickLinksProps, IQuick
     } = this.props;
 
     return (
-      <section className={`${styles.quickLinks}`}>
-        
+      <section className={styles.quickLinks}>
+
+        <div className={styles.header}>
+          <h2>Quick Links</h2>
+          <p>
+            Frequently used employee resources, one click away.
+          </p>
+        </div>
+
+        <div className={styles.divider}></div>
+
+        <div className={styles.grid}>
+
+          <a href="#" className={styles.card}>
+
+            <div className={styles.cardTop}>
+
+              <div className={styles.icon}>
+                <img
+                  src={groupIcon}
+                  alt="HR Portal"
+                />
+              </div>
+
+              <span className={styles.arrow}>↗</span>
+
+            </div>
+
+            <div className={styles.content}>
+              <h3>HR Portal</h3>
+              <p>Payroll, benefits &amp; requests</p>
+            </div>
+
+          </a>
+
+        </div>
+
       </section>
     );
   }

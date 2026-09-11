@@ -1,29 +1,175 @@
 .quickLinks {
-  overflow: hidden;
-  padding: 1em;
-  color: "[theme:bodyText, default: #323130]";
-  color: var(--bodyText);
-}
-
-.welcome {
-  text-align: center;
-}
-
-.welcomeImage {
   width: 100%;
-  max-width: 420px;
-}
+  padding: 0 44px 32px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #ffffff;
+  color: #0d0d0d;
 
-.links {
-  a {
+  // Header
+  .header {
+    margin-bottom: 20px;
+
+    h2 {
+      margin: 0 0 6px;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      color: #0d0d0d;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 20px;
+      color: #63636f;
+    }
+  }
+
+  // Horizontal line
+  .divider {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 28px;
+    background: #dedede;
+  }
+
+  // Cards Grid
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  // Card
+  .card {
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 17px;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 103px;
+    padding: 20px;
     text-decoration: none;
-    color: "[theme:link, default:#03787c]";
-    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 
     &:hover {
-      text-decoration: underline;
-      color: "[theme:linkHovered, default: #014446]";
-      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+      transform: translateY(-2px);
+      border-color: color-mix(in oklab, #615fff 42%, transparent);
+      box-shadow: 0 10px 28px -14px #23283338;
+
+      .arrow {
+        transform: translate(2px, -2px);
+      }
+    }
+
+    &:focus {
+      border: 1px solid #dedede;
+      box-shadow: 0 1px 2px 0 #0a0a0a0a;
+      outline: none;
+    }
+  }
+
+  // Top section
+  .cardTop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  // Icon container
+  .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eeeeff;
+    border-radius: 11px;
+
+    &:hover {
+      // background: #615fff;
+      background: #d3d3f1;
+    }
+
+    img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      display: block;
+    }
+  }
+
+  // Arrow
+  .arrow {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #666666;
+    transition: transform 0.2s ease;
+  }
+
+  // Card content
+  .content {
+    margin-top: 12px;
+
+    h3 {
+      margin: 0 0 4px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 600;
+      color: #0d0d0d;
+    }
+
+    p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 19px;
+      color: #63636f;
+    }
+  }
+
+  // ------------------------------------
+  // Tablet
+  // ------------------------------------
+  @media (max-width: 1100px) {
+    padding: 0 30px 30px;
+
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  // ------------------------------------
+  // Mobile
+  // ------------------------------------
+  @media (max-width: 600px) {
+    padding: 0 20px 24px;
+
+    .header {
+      h2 {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .divider {
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .card {
+      min-height: 130px;
+      padding: 18px;
     }
   }
 }
