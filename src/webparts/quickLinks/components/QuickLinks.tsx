@@ -59,10 +59,7 @@ export default class QuickLinks extends React.Component<IQuickLinksProps, IQuick
             <div className={styles.cardTop}>
 
               <div className={styles.icon}>
-                <img
-                  src={groupIcon}
-                  alt="HR Portal"
-                />
+                <img src={groupIcon} alt="HR Portal" />
               </div>
 
               <span className={styles.arrow}>↗</span>
@@ -72,6 +69,120 @@ export default class QuickLinks extends React.Component<IQuickLinksProps, IQuick
             <div className={styles.content}>
               <h3>HR Portal</h3>
               <p>Payroll, benefits &amp; requests</p>
+            </div>
+
+          </a>
+
+          <a href="#" className={styles.card}>
+
+            <div className={styles.cardTop}>
+
+              <div className={styles.icon}>
+                <img src={groupIcon} alt="HR Portal" />
+              </div>
+
+              <span className={styles.arrow}>↗</span>
+              
+            </div>
+
+            <div className={styles.content}>
+              <h3>IT Support</h3>
+              <p>Raise and track IT tickets</p>
+            </div>
+
+          </a>
+
+          <a href="#" className={styles.card}>
+
+            <div className={styles.cardTop}>
+
+              <div className={styles.icon}>
+                <img src={groupIcon} alt="HR Portal" />
+              </div>
+
+              <span className={styles.arrow}>↗</span>
+              
+            </div>
+
+            <div className={styles.content}>
+              <h3>Employee Directory</h3>
+              <p>Find colleagues instantly</p>
+            </div>
+
+          </a>
+
+          <a href="#" className={styles.card}>
+
+            <div className={styles.cardTop}>
+
+              <div className={styles.icon}>
+                <img src={groupIcon} alt="HR Portal" />
+              </div>
+
+              <span className={styles.arrow}>↗</span>
+              
+            </div>
+
+            <div className={styles.content}>
+              <h3>Leave Management</h3>
+              <p>Apply and check balances</p>
+            </div>
+
+          </a>
+
+          <a href="#" className={styles.card}>
+
+            <div className={styles.cardTop}>
+
+              <div className={styles.icon}>
+                <img src={groupIcon} alt="HR Portal" />
+              </div>
+
+              <span className={styles.arrow}>↗</span>
+              
+            </div>
+
+            <div className={styles.content}>
+              <h3>Timesheet</h3>
+              <p>Log weekly project hours</p>
+            </div>
+
+          </a>
+
+          <a href="#" className={styles.card}>
+
+            <div className={styles.cardTop}>
+
+              <div className={styles.icon}>
+                <img src={groupIcon} alt="HR Portal" />
+              </div>
+
+              <span className={styles.arrow}>↗</span>
+              
+            </div>
+
+            <div className={styles.content}>
+              <h3>Expense Claim</h3>
+              <p>Submit and track claims</p>
+            </div>
+
+          </a>
+
+          <a href="#" className={styles.card}>
+
+            <div className={styles.cardTop}>
+
+              <div className={styles.icon}>
+                <img src={groupIcon} alt="HR Portal" />
+              </div>
+
+              <span className={styles.arrow}>↗</span>
+              
+            </div>
+
+            <div className={styles.content}>
+              <h3>Documents</h3>
+              <p>Shared team libraries</p>
             </div>
 
           </a>

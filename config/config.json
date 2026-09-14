@@ -9,10 +9,37 @@
           "manifest": "./src/webparts/quickLinks/QuickLinksWebPart.manifest.json"
         }
       ]
+    },
+    "our-values-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ourValues/OurValuesWebPart.js",
+          "manifest": "./src/webparts/ourValues/OurValuesWebPart.manifest.json"
+        }
+      ]
+    },
+    "announcements-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/announcements/AnnouncementsWebPart.js",
+          "manifest": "./src/webparts/announcements/AnnouncementsWebPart.manifest.json"
+        }
+      ]
+    },
+    "employee-leave-history-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/employeeLeaveHistory/EmployeeLeaveHistoryWebPart.js",
+          "manifest": "./src/webparts/employeeLeaveHistory/EmployeeLeaveHistoryWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "QuickLinksWebPartStrings": "lib/webparts/quickLinks/loc/{locale}.js"
+    "QuickLinksWebPartStrings": "lib/webparts/quickLinks/loc/{locale}.js",
+    "OurValuesWebPartStrings": "lib/webparts/ourValues/loc/{locale}.js",
+    "AnnouncementsWebPartStrings": "lib/webparts/announcements/loc/{locale}.js",
+    "EmployeeLeaveHistoryWebPartStrings": "lib/webparts/employeeLeaveHistory/loc/{locale}.js"
   }
 }
